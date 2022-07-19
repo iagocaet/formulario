@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styloform.css" media="screen">
+        
+        <title>Cadastro de funcionários</title>
+</head>
+<body>
+  <div>
+    <h1 id="titulo">Cadastre-se para concorrer a uma vaga</h1>
+    <p id="subtitulo">Complete com suas informações a seguir:</p>
+    <br>
+  </div>
+  <form>
+    <fieldset class="grupo">
+      <div class="campo">
+        <label for="Nome"><b>Nome</b></label>
+        <input type="text" name="nome" id="nome" required>
+      </div>
+      <br>
+      <div class="campo">
+        <label for="Sobrenome"><b>Sobrenome</b></label> 
+        <input type="nome" name="nome" id="nome" required>
+      </div>
+    </fieldset>
+    <br>
+    <div class="campo">
+      <label for="Email"><b>Email</b></label>
+      <input type="email" nome="email" id="nome" required @>
+    </div>
+    <br>
+    <fieldset class="grupo">
+    <div id="check">
+      <label><b>Prefiro uma vaga no setor...</b></label>
+      <label>
+        <input type="radio" name="setor" value="comercial/administrativo">Comercial/Administrativo
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="setor" value="oper">Operacional
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="setor" value="logi">Logística
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="setor" value="dire">Diretoria
+      </label>
+    </div>
+    </fieldset>
+    <br>
+    <br>
+    <br>
+    <div class="campo">
+      <br>
+      <label><b>Escolha o estado</b></label>
+      <br>
+      <select id="estado">
+      <option><b>Selecione</b></option>
+      <option>RJ</option>
+      <option>SP</option>
+      <option>MG</option>
+      <option>ES</option>
+      <option>CE</option>
+      </select>
+    </div>
+    <br>
+
+    <div class="campo">
+    <label><b>Conte um pouco sobre a sua experiência:</b></label>
+    <textarea row="6" style="width: 25em ;" id="experiência" name="experiência"></textarea>
+    </div>
+    <br>
+    <div class="botão">
+<button type="submit"><b>Concluído</b></button>
+    </div>
+    
+  </form>
+
+  </body>
+</html>
